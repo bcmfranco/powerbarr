@@ -1,0 +1,55 @@
+body{
+    text-transform: uppercase;
+    font-family: monospace;
+    width: 80%;
+    margin: auto;
+}
+
+#power_barr{
+    display: grid;
+    justify-items: center;
+}
+
+#power_barr div{
+    margin: 5px 0;
+}
+
+#power_barr h1{
+    text-align: center;
+}
+
+#power_barr #pb_spiker{
+    border: 1px solid black;
+    height: 50px;
+    width: 50%;
+    margin: auto;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#power_barr #pb_barr_wrapper{
+    border: 1px solid black;
+    width: 300px;
+    height: 50px;
+
+}
+
+#power_barr #pb_barr{
+    background-color: gray;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#power_barr #pb_run{
+    border: 1px solid black;
+    height: 50px;
+    width: 100px;
+    background-color: inherit;
+}
+
+#power_barr button{
+    box-shadow: 2px 2px gray;
+}
