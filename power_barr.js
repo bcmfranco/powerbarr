@@ -2,7 +2,6 @@
 var pause = true; //is counter paused
 var range = ['0.2', '0.4', '0.6', '0.8', '1'];
 
-
 // Helper functions
 
 function spin() {
@@ -11,6 +10,7 @@ function spin() {
   var spiker = setInterval(counter, 200);
 
   function counter() {
+
     if (!pause) { //do something if not paused
         spike = spike+1;
 
@@ -18,9 +18,11 @@ function spin() {
             console.log("hi");
             spike = 0;
         }
-        $$("#pb_spiker").set('html', range[spike]);
         $$('#pb_barr').setStyle('opacity', range[spike]);
+    } else {
+        $$("#pb_spiker").set('html', range[spike]);
     }
+
   }
 
 }
